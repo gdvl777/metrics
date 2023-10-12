@@ -3,15 +3,17 @@
 <div align="center">
   <br/>
 
-  <h1><b>Metrics Tracker</b></h1>
+
+  <h1><b>Metrics</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Metrics Tracker ](#-metrics-tracker-)
-  - [🛠 Built With ](#-built-with-)
+
+- [📖 Metrics ](#-metrics-tracker-)
+ - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -28,9 +30,11 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Metrics Tracker <a name="about-project"></a>
 
->Metrics Tracker, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
+# 📖 Metrics <a name="about-project"></a>
+
+>Metrics, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -147,10 +151,12 @@
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Daniel Villalba L.**
+
+👤 **Daniel Villalba L**
 
 -   GitHub: [@gdvl777](https://github.com/gdvl777)
--   X: [X](https://www.x.com/gdvl777_/)
+-   X: [X](https://www.x.com/gdvl777/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
