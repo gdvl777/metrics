@@ -3,17 +3,15 @@
 <div align="center">
   <br/>
 
-
-  <h1><b>Metrics</b></h1>
+  <h1><b>Metrics Tracker</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-
-- [📖 Metrics ](#-metrics-tracker-)
- - [🛠 Built With ](#-built-with-)
+- [📖 Metrics Tracker ](#-metrics-tracker-)
+  - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -30,11 +28,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
+# 📖 Metrics Tracker <a name="about-project"></a>
 
-# 📖 Metrics <a name="about-project"></a>
-
->Metrics, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
-
+>Metrics Tracker, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -105,7 +101,7 @@
 
 > -Clone this repository to your local machine using:
 
->  git clone https://github.com/gdvl777/Metrics.git
+>  git clone https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
 
 > -Navigate to the project folder:
 
@@ -134,7 +130,7 @@
 
 ### Setup
 
-> Clone this repository to your desired folder: https://github.com/gdvl777/Metrics.git
+> Clone this repository to your desired folder: https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
 
 ### Install
 
@@ -151,12 +147,10 @@
 
 ## 👥 Authors <a name="authors"></a>
 
+👤 **Claudia Rojas**
 
-👤 **Daniel Villalba L**
-
--   GitHub: [@gdvl777](https://github.com/gdvl777)
--   X: [X](https://www.x.com/gdvl777/)
-
+-   GitHub: [@githubhandle](https://github.com/ClaudiaRojasSoto)
+-   LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudia-soto-260504208/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -171,7 +165,7 @@
 
 > Contributions, issues, and feature requests are welcome!
 
-> Feel free to check the [issues page](https://github.com/gdvl777/Metrics/issues).
+> Feel free to check the [issues page](https://github.com/ClaudiaRojasSoto/Metricks_Tracker/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
