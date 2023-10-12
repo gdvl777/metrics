@@ -3,17 +3,15 @@
 <div align="center">
   <br/>
 
-
-  <h1><b>Metrics</b></h1>
+  <h1><b>Metrics Tracker</b></h1>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-
-- [📖 Metrics ](#-metrics-tracker-)
- - [🛠 Built With ](#-built-with-)
+- [📖 Metrics Tracker ](#-metrics-tracker-)
+  - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -30,11 +28,10 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
+# 📖 Metrics Tracker <a name="about-project"></a>
 
-# 📖 Metrics <a name="about-project"></a>
-
->Metrics, is a mobile web application built using React and Redux! This capstone project aims to provide users with a comprehensive platform to monitor and analyze numeric data related to a topic of interest. The application fetches data from an API of your choice, offering users a diverse range of metrics to explore and analyze.
-
+>Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!.
+[Here](https://www.loom.com/share/148a4ded8986457e99c918d9a938794c?sid=837952a4-36f1-4d20-aac3-a9264fasdq2c0b) is the link to the video presentation 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -73,8 +70,6 @@
 </details>
 
 
-
-
 ### Key Features <a name="key-features"></a>
 
 - **SPA**
@@ -91,7 +86,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see a Demo [soon]().
+> You can see a Demo [here](https://population-tracker-h69j.onrender.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,14 +118,45 @@
 
 > The project follows the following folder and file structure:
 
-- /src: Contains the source files of the application.
-- /src/index.js: Main entry point of the JavaScript application.
-- /src/App.js: Top-level component of the application.
-- /src/components: Directory for React component
-- /src/redux: Directory for redux administration.
-- /public: Contains the public files and assets of the application.
-- /public/index.html: Base HTML file of the application.
-- /build: Contains the generated production files.
+- `/src`: Contains the source files of the application.
+- `/src/index.js`: Main entry point of the JavaScript application.
+- `/src/App.js`: Top-level component of the application where components are rendered.
+- `/src/components`: Directory for React components.
+- `/src/components/HomePage.js`: Component for the home page.
+- `/src/components/HomePage.test.js`: Tests for the home page.
+- `/src/components/HomePage.css`: Styles for the home page.
+- `/src/components/navbar`: Folder for the navigation bar components.
+- `/src/components/navbar/Navbar.js`: Component for the navigation bar.
+- `/src/components/navbar/Navbar.test.js`: Tests for the navigation bar.
+- `/src/components/navbar/Navbar.css`: Styles for the navigation bar.
+- `/src/components/details`: Folder for the details components.
+- `/src/components/details/Details.js`: Component for the details.
+- `/src/components/details/Details.test.js`: Tests for the details.
+- `/src/components/details/Details.css`: Styles for the details.
+- `/src/components/countries`: Folder for the countries components.
+- `/src/components/countries/Countries.js`: Component for the countries.
+- `/src/components/countries/Countries.test.js`: Tests for the countries.
+- `/src/components/countries/Countries.css`: Styles for the countries.
+- `/src/imagesContinents`: Contains the folder of images of continents.
+- `/src/imagesContinents/continents`: Folder with images of continents.
+- `/src/redux`: Directory for Redux management.
+- `/src/redux/store.js`: Redux store configuration.
+- `/src/redux/actions`: Folder for Redux actions.
+- `/src/redux/actions/worldActions.js`: Actions for world management.
+- `/src/redux/actions/worldActions.test.js`: Tests for world actions.
+- `/src/redux/actions/countriesActions.js`: Actions for countries management.
+- `/src/redux/actions/countriesActions.test.js`: Tests for countries actions.
+- `/src/redux/actions/continentsActions.js`: Actions for continents management.
+- `/src/redux/actions/continentsActions.test.js`: Tests for continents actions.
+- `/src/redux/reducers`: Folder for Redux reducers.
+- `/src/redux/reducers/rootReducer.js`: Root reducer for the application.
+- `/src/redux/reducers/worldReducer.js`: Reducer for world management.
+- `/src/redux/reducers/countriesReducer.js`: Reducer for countries management.
+- `/src/redux/reducers/continentsReducer.js`: Reducer for continents management.
+- `/src/redux/reducers/*.test.js`: Tests for the reducers.
+- `/public`: Contains the public files and assets of the application.
+- `/public/index.html`: Base HTML file of the application.
+- `/build`: Contains the generated production files.
 
 ### Setup
 
@@ -151,12 +177,11 @@
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Daniel Villalba L**
 
--   GitHub: [@gdvl777](https://github.com/gdvl777)
--   X: [X](https://www.x.com/gdvl777/)
-
+-   GitHub: [@githubhandle](https://github.com/gdvl777)
+-   X: [X](x.com/gdvl777)
+-   AngelList: [AngelList](https://wellfound.com/u/gdvl777)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -188,6 +213,13 @@
 > -   Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
 
 > -   GitHub Docs for providing a wealth of information on Git and GitHub.
+
+> - Creative Commons for providing the design of this work.
+> - You can click on the link to see the original design:
+> - [original design on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). 
+> - Nelson Sakwa in Behance, for her original design idea.
+> - You can click on the link to see the Nelson Sakwa profile on Behance.
+> - [Nelson Sakwa profile on Behance](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

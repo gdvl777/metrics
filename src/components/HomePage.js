@@ -1,43 +1,61 @@
-import React from 'react';
-import '../styles/HomePage.css';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchContinentsPopulation } from '../redux/actions/continentsActions';
+import { fetchWorldPopulation } from '../redux/actions/worldActions';
+import world from '../imagesContinents/continents/world.png';
+import './HomePage.css';
 
-import continent1 from '../imagesContinents/continents/africa.png';
-import continent2 from '../imagesContinents/continents/america.png';
-import continent3 from '../imagesContinents/continents/asia.png';
-import continent4 from '../imagesContinents/continents/australia.png';
-import continent5 from '../imagesContinents/continents/europa.png';
-import continent6 from '../imagesContinents/continents/oceania.png';
+import africa from '../imagesContinents/continents/africa.png';
+import americas from '../imagesContinents/continents/america.png';
+import asia from '../imagesContinents/continents/asia.png';
+import europa from '../imagesContinents/continents/europa.png';
+import oceania from '../imagesContinents/continents/oceania.png';
 
-const HomePage = () => (
-  <div className="home-page">
-    <div className="continent-grid">
-      <div className="continent-row">
-        <Link to="/countries/africa">
-          <img src={continent1} alt="Africa" />
-        </Link>
-        <Link to="/countries/america">
-          <img src={continent2} alt="America" />
-        </Link>
-      </div>
-      <div className="continent-row">
-        <Link to="/countries/asia">
-          <img src={continent3} alt="Asia" />
-        </Link>
-        <Link to="/countries/australia">
-          <img src={continent4} alt="Australia" />
-        </Link>
-      </div>
-      <div className="continent-row">
-        <Link to="/countries/europa">
-          <img src={continent5} alt="Europa" />
-        </Link>
-        <Link to="/countries/oceania">
-          <img src={continent6} alt="Oceania" />
-        </Link>
+const HomePage = () => {
+  const dispatch = useDispatch();
+  const continentsPopulation = useSelector((state) => state.continents);
+  const worldPopulation = useSelector((state) => state.worldPopulation);
+
+  const continents = [
+    { name: 'africa', image: africa },
+    { name: 'americas', image: americas },
+    { name: 'asia', image: asia },
+    { name: 'europe', image: europa },
+    { name: 'oceania', image: oceania },
+  ];
+
+  useEffect(() => {
+    dispatch(fetchContinentsPopulation());
+    dispatch(fetchWorldPopulation());
+  }, [dispatch]);
+
+  return (
+    <div className="home">
+      <header>
+        <img className="world_img" src={world} alt={world} />
+        <div className="title-world-population">
+          <h3>World Population</h3>
+          <p>{worldPopulation}</p>
+        </div>
+      </header>
+      <div className="continents-container">
+        {continents.map((continent) => (
+          <div className="continents" key={continent.name}>
+            <Link to={`/countries/${continent.name}`}>
+              <img src={continent.image} alt={continent.name} />
+              <div className="title-population">
+                <h3>
+                  {continent.name}
+                </h3>
+                <p>{continentsPopulation[continent.name]}</p>
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default HomePage;
