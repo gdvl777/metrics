@@ -101,7 +101,7 @@
 
 > -Clone this repository to your local machine using:
 
->  git clone https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
+>  git clone https://github.com/gdvl777/Metrics.git
 
 > -Navigate to the project folder:
 
@@ -130,7 +130,7 @@
 
 ### Setup
 
-> Clone this repository to your desired folder: https://github.com/ClaudiaRojasSoto/Metricks_Tracker.git
+> Clone this repository to your desired folder: https://github.com/gdvl777/Metrics.git
 
 ### Install
 
@@ -147,10 +147,10 @@
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Claudia Rojas**
+👤 **Daniel Villalba L**
 
--   GitHub: [@githubhandle](https://github.com/ClaudiaRojasSoto)
--   LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudia-soto-260504208/)
+-   GitHub: [@gdvl777](https://github.com/gdvl777)
+-   X: [X](https://www.x.com/gdvl777_)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,7 +165,7 @@
 
 > Contributions, issues, and feature requests are welcome!
 
-> Feel free to check the [issues page](https://github.com/ClaudiaRojasSoto/Metricks_Tracker/issues).
+> Feel free to check the [issues page](https://github.com/gdvl777/Metrics/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
