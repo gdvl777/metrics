@@ -16,7 +16,7 @@ function Countries() {
         const response = await axios.get(`https://restcountries.com/v3.1/region/${continent}`);
         if (response.data) {
           setCountries(response.data);
-          dispatch(updateCountries(response.data)); 
+          dispatch(updateCountries(response.data));
         }
       } catch (error) {
         console.error('Error al obtener datos de la API:', error);
@@ -38,7 +38,7 @@ function Countries() {
     try {
       const response = await axios.get(`https://restcountries.com/v3.1/alpha/${country.cca2}`);
       if (response.data) {
-        dispatch(updateCountryData(response.data)); 
+        dispatch(updateCountryData(response.data));
       } else {
         console.log('No se devolvieron datos válidos del país en la API');
       }
@@ -47,8 +47,7 @@ function Countries() {
     }
   };
 
-  const capitalizeFirstLetter = (string) =>
-    string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   return (
     <div>
       <h1>{capitalizeFirstLetter(continent)}</h1>
