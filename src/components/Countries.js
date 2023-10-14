@@ -47,10 +47,10 @@ function Countries() {
     }
   };
 
-  const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  const capFirstLettr = (string) => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
   return (
     <div>
-      <h1>{capitalizeFirstLetter(continent)}</h1>
+      <h1>{capFirstLettr(continent)}</h1>
       <div className="countries-grid">
         {countries.map((country) => (
           <Link
