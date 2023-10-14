@@ -1,45 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import axios from 'axios';
 import { updateCountries, updateCountryData } from '../redux/actions/countriesActions';
-import flagsData from '../flagData';
 import '../styles/Countries.css';
 
-import continent1 from '../imagesContinents/continents/africa.png';
-import continent2 from '../imagesContinents/continents/america.png';
-import continent3 from '../imagesContinents/continents/asia.png';
-import continent4 from '../imagesContinents/continents/australia.png';
-import continent5 from '../imagesContinents/continents/europa.png';
-import continent6 from '../imagesContinents/continents/oceania.png';
-
-function getContinentImage(continent) {
-  switch (continent) {
-    case 'africa':
-      return continent1;
-    case 'america':
-      return continent2;
-    case 'asia':
-      return continent3;
-    case 'australia':
-      return continent4;
-    case 'europa':
-      return continent5;
-    case 'oceania':
-      return continent6;
-    default:
-      return null;
-  }
-}
-
-const Countries = () => {
+function Countries() {
   const { continent } = useParams();
-  const countries = useSelector((state) => state.countries.countries);
+  const [countries, setCountries] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const countriesOfContinent = flagsData[continent];
-    dispatch(updateCountries(countriesOfContinent));
+    async function fetchCountries() {
+      try {
+        const response = await axios.get(`https://restcountries.com/v3.1/region/${continent}`);
+        if (response.data) {
+          setCountries(response.data);
+          dispatch(updateCountries(response.data)); // Actualiza el estado de Redux con los datos de la API
+        }
+      } catch (error) {
+        console.error('Error al obtener datos de la API:', error);
+      }
+    }
+
+    fetchCountries();
   }, [continent, dispatch]);
 
   if (!Array.isArray(countries)) {
@@ -52,10 +36,9 @@ const Countries = () => {
 
   const handleCountryClick = async (country) => {
     try {
-      const response = await axios.get(`https://restcountries.com/v3/alpha/${country.countryCode}`);
-      if (response.data && response.data.length > 0) {
-        console.log(response.data);
-        dispatch(updateCountryData(response.data[0]));
+      const response = await axios.get(`https://restcountries.com/v3.1/alpha/${country.cca2}`);
+      if (response.data) {
+        dispatch(updateCountryData(response.data)); // Actualiza el estado de Redux con los datos del país
       } else {
         console.log('No se devolvieron datos válidos del país en la API');
       }
@@ -64,13 +47,11 @@ const Countries = () => {
     }
   };
 
-  const capitalizeFirstLetter = (
-    string,
-  ) => string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+  const capitalizeFirstLetter = (string) =>
+    string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 
   return (
     <div>
-      <img src={getContinentImage(continent)} alt={continent} />
       <h1>{capitalizeFirstLetter(continent)}</h1>
       <div className="countries-grid">
         {countries.map((country) => (
@@ -78,9 +59,8 @@ const Countries = () => {
             to={{
               pathname: `/country/${country.name.common}`,
               state: { countryData: country },
-              // Pasamos toda la información del país en el estado de la ruta
             }}
-            key={country.countryCode}
+            key={country.cca2}
           >
             <div
               className="country-item"
@@ -91,14 +71,14 @@ const Countries = () => {
               tabIndex="0"
               role="button"
             >
-              <img src={country.imagePath} alt={country.name} />
-              <p>{country.name}</p>
+              <img src={country.flags.png} alt={country.name.common} />
+              <p>{country.name.common}</p>
             </div>
           </Link>
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default Countries;
