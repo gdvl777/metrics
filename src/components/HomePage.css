@@ -33,7 +33,6 @@ header {
 img {
   object-fit: cover;
   width: 251px;
-  filter: brightness(0.6);
 }
 
 h3 {
