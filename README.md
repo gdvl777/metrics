@@ -1,256 +1,210 @@
 <a name="readme-top"></a>
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
-
-You should modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
-
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h1><b>Metrics</b></h1>
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Metrics Tracker ](#-metrics-tracker-)
+ - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Project Structure](#project-structure)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-<!-- PROJECT DESCRIPTION -->
+# 📖 Metrics Tracker <a name="about-project"></a>
 
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+>Welcome to Metricks Tracker, a mobile web app using React and Redux! Explore a selected API, monitor, and obtain information effortlessly! Metricks Tracker focuses primarily on the world population to offer a detailed and meaningful analysis of data related to this area. With Metricks Tracker, you will have access to valuable and up-to-date information about the world population, enabling you to make informed decisions and gain a clearer understanding of demographic patterns and trends. Start using Metricks Tracker now and discover a world of statistical information at your fingertips!.
+[Here](hhttps://www.loom.com/share/816efc87e8934f36b5c7abbe0133103b?sid=5d3ebb0c-31a0-4eab-903c-2332b5d2a593) is the link to the video presentation 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+<details>
+  <summary>React-redux</summary>
+    <ul>
+      <li>This project use <a href="https://react-redux.js.org/">React</a></li>
+    </ul>
+</details>
 
 <details>
-  <summary>Client</summary>
+  <summary>HTML</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>This project use <a href="https://github.com/microverseinc/curriculum-html-css/blob/main/html5.md">HTML.</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>CSS</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>The <a href="https://github.com/microverseinc/curriculum-html-css/blob/main/html5.md">CSS</a> is used to provide the design in the whole page.</li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Linters</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>The <a href="https://github.com/microverseinc/linters-config">Linters</a> are tools that help us to check and solve the errors in the code</li>
+    This project count with two linters: 
+    <ul>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **SPA**
+- **CRA**
+- **Styles**
+- **Router**
+- **Logged**
+- **Toolkit**
+- **React-Redux**
+- **Jest & React Test Library**
+- **Deployment**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+> You can see a Demo [here](https://population-tracker-h69j.onrender.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> To get a local copy up and running, follow these steps.
+> This project requires Node.js and npm installed on your machine.
 
-To get a local copy up and running, follow these steps.
+> -Node.js
+> -npm
 
-### Prerequisites
+> -Clone this repository to your local machine using:
 
-In order to run this project you need:
+>  git clone https://github.com/gdvl777/Metrics.git
 
-<!--
-Example command:
+> -Navigate to the project folder:
 
-```sh
- gem install rails
-```
- -->
+> cd math_magicians
+
+> -Install the project dependencies:
+
+> npm install
+
+> To start the development server, run the following command:
+
+> npm start
+
+### Project Structure
+
+> The project follows the following folder and file structure:
+
+- `/src`: Contains the source files of the application.
+- `/src/index.js`: Main entry point of the JavaScript application.
+- `/src/App.js`: Top-level component of the application where components are rendered.
+- `/src/components`: Directory for React components.
+- `/src/components/HomePage.js`: Component for the home page.
+- `/src/components/HomePage.test.js`: Tests for the home page.
+- `/src/components/HomePage.css`: Styles for the home page.
+- `/src/components/navbar`: Folder for the navigation bar components.
+- `/src/components/navbar/Navbar.js`: Component for the navigation bar.
+- `/src/components/navbar/Navbar.test.js`: Tests for the navigation bar.
+- `/src/components/navbar/Navbar.css`: Styles for the navigation bar.
+- `/src/components/details`: Folder for the details components.
+- `/src/components/details/Details.js`: Component for the details.
+- `/src/components/details/Details.test.js`: Tests for the details.
+- `/src/components/details/Details.css`: Styles for the details.
+- `/src/components/countries`: Folder for the countries components.
+- `/src/components/countries/Countries.js`: Component for the countries.
+- `/src/components/countries/Countries.test.js`: Tests for the countries.
+- `/src/components/countries/Countries.css`: Styles for the countries.
+- `/src/imagesContinents`: Contains the folder of images of continents.
+- `/src/imagesContinents/continents`: Folder with images of continents.
+- `/src/redux`: Directory for Redux management.
+- `/src/redux/store.js`: Redux store configuration.
+- `/src/redux/actions`: Folder for Redux actions.
+- `/src/redux/actions/worldActions.js`: Actions for world management.
+- `/src/redux/actions/worldActions.test.js`: Tests for world actions.
+- `/src/redux/actions/countriesActions.js`: Actions for countries management.
+- `/src/redux/actions/countriesActions.test.js`: Tests for countries actions.
+- `/src/redux/actions/continentsActions.js`: Actions for continents management.
+- `/src/redux/actions/continentsActions.test.js`: Tests for continents actions.
+- `/src/redux/reducers`: Folder for Redux reducers.
+- `/src/redux/reducers/rootReducer.js`: Root reducer for the application.
+- `/src/redux/reducers/worldReducer.js`: Reducer for world management.
+- `/src/redux/reducers/countriesReducer.js`: Reducer for countries management.
+- `/src/redux/reducers/continentsReducer.js`: Reducer for continents management.
+- `/src/redux/reducers/*.test.js`: Tests for the reducers.
+- `/public`: Contains the public files and assets of the application.
+- `/public/index.html`: Base HTML file of the application.
+- `/build`: Contains the generated production files.
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+> Clone this repository to your desired folder: https://github.com/gdvl777/Metrics.git
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+> Install this project with: install Stylelint and ESLint
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+> To run the project, execute the following command: just need a web Browser
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
+> To run tests, run the following command: npm start
+> you just need a simple web browser to run this project for a test
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Daniel Villalba L**
 
-👤 **Author1**
+-   GitHub: [@githubhandle](https://github.com/gdvl777)
+-   X: [X](x.com/gdvl777)
+-   AngelList: [AngelList](https://wellfound.com/u/daniel-villalba-2)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+-   **User keys - login**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+> Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+> Feel free to check the [issues page](https://github.com/gdvl777/Metrics/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+> If you like this project show support by following this account
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,25 +212,16 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> -   Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
 
-I would like to thank...
+> -   GitHub Docs for providing a wealth of information on Git and GitHub.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+> - Creative Commons for providing the design of this work.
+> - You can click on the link to see the original design:
+> - [original design on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)). 
+> - Nelson Sakwa in Behance, for her original design idea.
+> - You can click on the link to see the Nelson Sakwa profile on Behance.
+> - [Nelson Sakwa profile on Behance](https://www.behance.net/sakwadesignstudio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -284,8 +229,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+> This project is [MIT](MIT.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
